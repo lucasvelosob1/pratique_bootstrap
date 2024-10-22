@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorando o Mundo | Dicas e Relatos de Viagem</title>
+    <link rel="shortcut icon" href="img/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#">Explorando o Mundo</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#inicio" onclick="showTab('inicio')">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dicas" onclick="showTab('dicas')">Dicas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#relatos" onclick="showTab('relatos')">Relatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <div class="container">
+        <div id="carousel-viagens" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img class="d-block w-100" src="img/imagem1.jpg" alt="China">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>China</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="img/imagem2.jpg" alt="Estados Unidos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Estados Unidos</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="img/imagem3.jpg" alt="Brasil">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Brasil</h2>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img class="d-block w-100" src="img/imagem4.jpg" alt="Inglaterra">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Inglaterra</h2>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-viagens" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-viagens" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-viagens" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel-viagens" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel-viagens" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carousel-viagens" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container mt-4">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" id="inicio-tab" data-bs-toggle="tab" href="#inicio" role="tab" aria-controls="inicio" aria-selected="true">Início</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="dicas-tab" data-bs-toggle="tab" href="#dicas" role="tab" aria-controls="dicas" aria-selected="false">Dicas</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" id="relatos-tab" data-bs-toggle="tab" href="#relatos" role="tab" aria-controls="relatos" aria-selected="false">Relatos</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="inicio" role="tabpanel" aria-labelledby="inicio-tab">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis modi ab facilis aspernatur dolor, nostrum doloremque repellendus, eaque quos voluptatibus necessitatibus obcaecati maxime. Ex aliquam delectus, iure omnis sint facilis.</p>
+                <p>Omnis perspiciatis obcaecati suscipit, veritatis vel deserunt dolore, porro nisi, assumenda laborum magni hic. Nam aliquid animi tenetur natus, officiis magnam excepturi? Blanditiis impedit illo ullam facere reiciendis voluptatem sed?</p>
+                <p>Consequuntur architecto amet nulla ullam? Ut, quasi placeat? Tenetur dignissimos eaque delectus dolor cupiditate nam iure possimus quia! Voluptatem, corrupti ullam nihil recusandae animi fugit quae quis soluta sapiente omnis.</p>
+            </div>
+            <div class="tab-pane fade" id="dicas" role="tabpanel" aria-labelledby="dicas-tab">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil aperiam doloribus repellendus inventore neque officia unde fugiat accusamus id, sequi atque omnis maiores totam vel est corrupti voluptatem iusto dolorum!</p>
+                <p>Beatae, vero labore? Quae harum natus ea non maxime sapiente alias aperiam nihil consectetur mollitia iure quis ullam, placeat consequatur est quam veritatis asperiores accusantium odio quos saepe quasi cupiditate.</p>
+                <p>Quia necessitatibus ipsam praesentium at nam molestias libero adipisci cum sunt quo aut, earum incidunt nesciunt, atque debitis. Accusantium aperiam corrupti placeat culpa, reprehenderit excepturi esse similique autem fuga ducimus!</p>
+                <p>Nulla quis dicta vero veritatis quisquam blanditiis, repellat porro voluptates sint, amet dolorum illo non dolorem obcaecati corrupti doloribus suscipit labore. Culpa, molestiae? Perferendis in, quo quisquam repudiandae vitae laboriosam!</p>
+            </div>
+            <div class="tab-pane fade" id="relatos" role="tabpanel" aria-labelledby="relatos-tab">
+                <p><strong>Fulana</strong> - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima quisquam veniam voluptas officiis id, placeat quod quas? Quod ratione, nulla voluptatem quam placeat aliquam aperiam optio eveniet quaerat, laboriosam officia.</p>
+                <p>Optio modi voluptates quisquam, debitis dolore veritatis, expedita iure architecto voluptas illum accusantium sequi et fuga error, dicta cupiditate vero ratione at accusamus nesciunt! Veritatis eum ea odit earum quos!</p>
+                <p>Cum, voluptas. Vel a magni debitis odio autem alias? Quaerat pariatur animi beatae vitae asperiores! Harum perferendis voluptatem, officia hic sapiente ducimus odio aperiam quaerat cupiditate molestias praesentium eligendi error.</p>
+                <p><strong>Beltrano</strong> - Cumque in at amet, dolor ab sint quisquam. Consequuntur porro eos nesciunt vero modi! Suscipit animi vitae iusto corrupti qui voluptate eius earum dolorem, odio cupiditate ipsa aperiam et nihil!</p>
+                <p>Amet blanditiis animi temporibus quas reiciendis laboriosam illum? Numquam, sequi velit? Magni beatae saepe rerum quisquam recusandae dolor vel error. Odit adipisci itaque debitis esse atque. Repellat repudiandae aperiam quis?</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <article class="card">
+                    <header class="card-header">
+                        Exploração ao Redor do Mundo
+                    </header>
+                    <img src="img/card1.jpg" alt="Exploração ao Redor do Mundo" />
+                    <div class="card-body">
+                        <h4 class="card-title">Destinos Imperdíveis: Descubra Lugares Incríveis pelo Mundo</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis doloribus ipsam iusto? Consequuntur nemo, ad officia error non placeat repellendus, nisi sint veritatis voluptatem temporibus beatae, eum pariatur explicabo incidunt.</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <article class="card">
+                    <header class="card-header">
+                        Guia Prático de Viagens
+                    </header>
+                    <img src="img/card2.jpg" alt="Guia Prático de Viagens" />
+                    <div class="card-body">
+                        <h4 class="card-title">Dicas de Viagem: Como Planejar Sua Aventura Perfeita</h4>
+                        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum quibusdam, explicabo similique deserunt consequatur nesciunt repellendus quis dolorum consectetur neque? Sequi debitis aspernatur voluptates officia iusto eos maxime eligendi omnis?</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12">
+                <article class="card">
+                    <header class="card-header">
+                        Histórias de Aventuras Inesquecíveis
+                    </header>
+                    <img src="img/card3.jpg" alt="Histórias de Aventuras Inesquecíveis" />
+                    <div class="card-body">
+                        <h4 class="card-title">Experiências Únicas: Relatos de Viagens que Marcam</h4>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, provident amet. Modi, quibusdam eius. Similique dolor accusantium fugit nisi, minima placeat deserunt dolores harum. Repellat, nihil. Commodi, porro! Odio, assumenda!</p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        function showTab(tabId) {
+            // Encontra a aba correspondente e a ativa
+            var tabTrigger = new bootstrap.Tab(document.querySelector('#' + tabId + '-tab'));
+            tabTrigger.show();
+        }
+    </script>
+</body>
+</html>
